@@ -1,18 +1,56 @@
-# CSC1021 Operating Systems: customshell
+<h1>CSC1021 Operating Systems: customshell</h1>
 
-## Introduction
+<h2>Stage 1</h2>
+<p>Beginnings of my project, with the following commands functioning :</p>
 
-This is the starter repository for the _CSC1021 Operating Systems_ project entitled `customshell` and which you must complete individually. https://loop.dcu.ie/mod/assign/view.php?id=2869985
+<ul>
+<li><strong>cd /path/to/somwhere</strong>     Changes the current working directory.</li>
+<li><strong>clr  </strong>                    Wipes the screen of all text.</li>
+<li><strong>dir </strong>                     List the contents of current directory.</li>
+<li><strong>environ </strong>                 List all environment strings.</li>
+<li><strong>echo Text of some sort.</strong>  Repeats back text typed after command. </li>
+<li><strong>help </strong>                    Opens basic user manual.</li>
+<li><strong>pause </strong>                   Halt all operations and inputs to shell until "Enter" is pressed.</li>
+<li><strong>quit </strong>                    Close the shell.</li>
+</ul>
 
-## What you need to do
+<p>This Shell supports 2 modes, which can be controlled by how the shell is invoked.</p>
 
-You should follow the instructions below:
+<ul>
+    <li><strong>./simpleshell</strong> Will read individual command arguements typed into shell.</li>
+                
+    <li><strong>./simpleshell  </strong>Will read individual command arguements typed into shell.</li>
+              
+</ul>
 
-1. fork (do not clone) this repository.  Once you have forked it, make your own repository private add me (Graham Healy - @healygr) as "maintainer". You must do both of these steps before adding any deliverables. Maintainer: Manage -> Members -> Invite members -> search for and select @healygr -> set Select Maximum role to maintainer -> click Invite; Private: Settings -> General -> Visibility, project features, permissions -> Project visibility = private.
-2. There are 3 folders (Stage1, Stage2, and Stage3), and within Stage1 and Stage2 there are `src`, `manual`, `bin` directories.
-3. Add your files relating to the manual/help command to the `manual` directory.
-4. Your `makefile` should build the binary and place it in the `bin` directory.
-5. For Stage3, you should only add a file named video.txt containing the link to your video submission. This folder should only contain this single file.
+<h2>Stage 2</h2>
 
-## Other notes
-There are supporting exercises to help you with the project.  You will find them all under  [Lab04/05 on the Loop CSC1021 Site](https://loop.dcu.ie/mod/book/view.php?id=2862651). 
+<p>A continuation from Stage 1, with the following advancements :</p>
+
+
+<h4>External Command Execution</h4>
+<p>Any command not recognised as a built-in is executed as an external program.
+
+The shell will fork a child process and execute the program.
+</p>
+
+<h4>I/O Redirection</h4>
+<p>The shell supports both strandard input and output redirection.</p>
+<ul>
+<li><strong>Output Redirection (Overwrite)</strong></li>
+<p><strong>">"</strong> Redirects standard output to a file, overwriting the file if it exists.</p>
+
+<li><strong>Output Redirection (Append)</strong></li>
+<p><strong>">>"</strong>  Redirects standard output to a file, appending to the file if it exists.</p>
+
+<li><strong>Input Redirection (Reading)</strong></li>
+<p><strong> "&lt;" </strong>   Redirects standard input from a file.
+</p>
+</ul>
+
+<h4>Background Execution</h4>
+<p>The shell supports running programs in the background.</p>
+<ul><li><strong>&</strong>   When a command ends with "&", the shell will return it's prompt immediately, while the program continues running.</li></ul>
+
+<h2>Stage 3</h2>
+<p>This was video documentation of the project, and there was no technical advancements required.</p>
