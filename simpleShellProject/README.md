@@ -1,5 +1,3 @@
-<h1>CSC1021 Operating Systems: customshell</h1>
-
 <h2>Stage 1</h2>
 <p>Beginnings of my project, with the following commands functioning :</p>
 
@@ -18,9 +16,7 @@
 
 <ul>
     <li><strong>./simpleshell</strong> Will read individual command arguements typed into shell.</li>
-                
-    <li><strong>./simpleshell  </strong>Will read individual command arguements typed into shell.</li>
-              
+    <li><strong>./simpleshell</strong> Will read individual command arguements typed into shell.</li>
 </ul>
 
 <h2>Stage 2</h2>
